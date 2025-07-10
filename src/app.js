@@ -26,7 +26,7 @@ window.onload = function () {
     if (e.target.value >= 315){
       avisos.classList.remove("alert-danger")
       avisos.classList.add("bg-white")
-      avisos.innerHTML= "Puedes cambiar la altura y el ancho de la carta"
+      avisos.innerHTML= "Puedes cambiar el alto y el ancho de la carta"
       carta.style.height = e.target.value + "px"
     } else {
       avisos.classList.remove("bg-white")
@@ -39,7 +39,7 @@ window.onload = function () {
     if (e.target.value >= 210){
       avisos.classList.remove("alert-danger")
       avisos.classList.add("bg-white")
-      avisos.innerHTML= "Puedes cambiar la altura y el ancho de la carta"
+      avisos.innerHTML= "Puedes cambiar el alto y el ancho de la carta"
 
       carta.style.width = e.target.value + "px"
     } else {
