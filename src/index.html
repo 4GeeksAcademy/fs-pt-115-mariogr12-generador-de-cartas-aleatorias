@@ -1,38 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body style="background-color: green;">
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-8 bg-white mt-3 d-flex flex-column" style="height: 600px; width: 400px; border-radius: 20px;">
-          <header style="font-size: 100px;" class="" id="cardHeader">
-            
-          </header>
-          <div style="font-size: 100px;" class="flex-grow-1 d-flex align-items-center justify-content-center" id="cardBody">
-            
-          </div>
-          <footer style="font-size: 100px; transform: rotate(180deg);" class="d-flex" id="cardFooter">
-            
-          </footer>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body style="background-color: green;">
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container-fluid">
+
+    <div class="row mt-3">
+      <div class="col d-flex justify-content-center">
+        <div id="avisos" style="width: 360px; height: 37.6px;" class="alert bg-white mb-0 py-0 d-flex align-items-center" role="alert">
+          Puedes cambiar la altura y el ancho de la carta
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script type="module" src="/app.js"></script>
-  </body>
+
+    <div class="row mt-3">
+      <div class="col d-flex justify-content-center">
+        <input id="alto" style="width: 100px;" type="number" class="form-control me-3" placeholder="Alto">
+        <input id="ancho" style="width: 100px;" type="number" class="form-control" placeholder="Ancho">
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <div id="carta" class="col-md-8 bg-white my-3 d-flex flex-column px-4"
+        style="height: 500px; width: 330px; border-radius: 20px;">
+
+        <header style="font-size: 70px;" class="" id="cardHeader"></header>
+        <div style="font-size: 70px;" class="flex-grow-1 d-flex align-items-center justify-content-center"
+          id="cardBody"></div>
+        <footer style="font-size: 70px; transform: rotate(180deg);" class="d-flex" id="cardFooter"></footer>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col d-flex justify-content-center mb-3">
+        <button id="buttonRandom" class="btn btn-outline-light">Cambio de carta</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
